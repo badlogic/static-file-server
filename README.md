@@ -1,5 +1,5 @@
 # static-file-server
-A Go based static file server. See the release page for binaries for Windows, Linux, and macOS.
+A Go based static file server. See the [release page](https://github.com/badlogic/static-file-server/releases/tag/1.0.0) for binaries for Windows, Linux, and macOS.
 
 Usage: `static-server <directory> <port>`
 
