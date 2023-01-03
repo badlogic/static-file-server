@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"github.com/pkg/browser"
 )
 
 func main() {
@@ -11,7 +12,8 @@ func main() {
 	http.Handle("/", fs)
 
 	log.Print("Listening on http://localhost:" + os.Args[2])
-	err := http.ListenAndServe(":" + os.Args[2], nil)
+	browser.OpenURL("http://localhost:" + os.Args[2])
+	err := http.ListenAndServe(":"+os.Args[2], nil)
 	if err != nil {
 		log.Fatal(err)
 	}
