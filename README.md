@@ -3,4 +3,4 @@ A Go based static file server. See the release page for binaries for Windows, Li
 
 Usage: `static-server <directory> <port>`
 
-My use case is serving static `.css/.js/.html/.wasm` files while working on WASM code.
+My use case is serving static `.css/.js/.html/.wasm` files while working on WASM code and I do not want to install Nginx, Python, whatever.
